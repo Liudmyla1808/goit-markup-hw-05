@@ -104,9 +104,11 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav{
     display: flex;
+    
 }
  .site-nav li:not(:first-child){
     margin-left: 50px; 
@@ -115,6 +117,7 @@ ul{
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color: var(--accent-color);
+    
 } 
 .auth-nav{
     display: flex;
@@ -138,12 +141,13 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .auth-nav-cont:hover,
 .auth-nav-cont:focus{
     color: var(--accent-color);
-    /* transition-property: transform; */
+   
 
 }
 
@@ -189,12 +193,16 @@ ul{
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button:hover,
 .button:focus{
     background-color: #188CE8;
+
 }
+
+
 /* Perevagu */
 .paragraf-perevag{
     line-height: 1.7;
@@ -338,9 +346,11 @@ flex-basis: calc(100% / 4 - 30px);}
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footcontadres{
     color: var(--tres-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footcontadres:hover,
 .footcontadres:focus{
@@ -377,6 +387,7 @@ flex-basis: calc(100% / 4 - 30px);}
      text-align: center;
      letter-spacing: 0.03em;
      cursor: pointer;
+     transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .butt:hover,
 .butt:focus{
@@ -442,6 +453,7 @@ a{
 .icon-svg{
     fill: currentColor;
     margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .perevagu-card{
@@ -469,6 +481,7 @@ a{
     background-color:  rgba(255, 255, 255, 0.1);
     /* border: 1px solid #EEEEEE; */
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -478,6 +491,7 @@ a{
 }
 .footer-icon{
     fill: var(--tres-text);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon:hover,
 .footer-icon:focus{
@@ -517,14 +531,13 @@ margin-bottom: 20px;
 }
 .tin{
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tin:hover,
 .tin:focus{
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-/* .logo-icon{
-    fill: currentColor;
-} */
+
 
  .client-logo{
     display: flex;
@@ -537,6 +550,7 @@ margin-bottom: 20px;
     border: 1px solid #AFB1B8;
     color: #AFB1B8;
     fill:#AFB1B8;
+    transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .client-card:not(:last-child) {
     margin-right: 30px;
@@ -562,6 +576,7 @@ margin-bottom: 20px;
     border: 1px solid #EEEEEE;
     border-radius: 50%;
     border-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .comanda-item:hover,
@@ -581,6 +596,7 @@ margin-bottom: 20px;
     }
 .comand-icon{
          fill: #AFB1B8;
+         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .comand-icon:hover,
 .comand-icon:focus{
@@ -596,7 +612,8 @@ margin-bottom: 20px;
      background-color: var(--accent-color);
      position: absolute;
      left: 0;
-     bottom: 0;
+     bottom: -1px;
+     border-radius: 2px;
 }
 .link-current{
     position: relative;
@@ -650,14 +667,21 @@ color: var(--tres-text);
 }
 .modal-button{
     position: absolute;
-    right: 14px;
-    top: 14px;
+    right: 8px;
+    top: 8px;
     color: var(--second-text);
-    background-color: #fff;
+    background-color: #fff; 
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
+}
+.modal-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .backdrop.is-hidden{
     opacity: 0;
